@@ -1,0 +1,94 @@
+CONFIGURATION
+
+1. Set up user information:
+git config --global user.name "vanick"
+git config --global user.email "azvanick@gmail.com"
+
+2. check configuration settings in use:
+git config --list
+
+3. Initialize a new empty Git repository in the current directory:
+git init
+
+4. Clone an existing repository:
+git clone <repository-url>
+
+5. Check repository status of working repository:
+git status
+
+6. Track new files (it adds the file to the staging area, preparing it for the next commit):
+git add <file>
+
+7. Track all new and modified files:
+git add .
+
+8. Commit changes (create new commit from staged changes. A commit is a snapshot of your repository):
+git commit -m "Commit message"
+
+9. Add and commit in one command:
+git commit -am "Commit message"
+
+
+BRANCHING AND MERGING
+
+10: List all branches:
+git branch
+
+11: Create a new branch:
+git branch <branch-name>
+
+12: Switch to a specified branch:
+git checkout <branch-name>
+
+13: Create a new branch and switch to it:
+git checkout -b <branch-name>
+
+14. Merge a branch into the current branch:
+git merge <branch-name>
+
+15. Delete a branch:
+git branch -d <branch-name>
+
+SHARE AND UPDATE PROJECTS
+
+16. Show remote projects
+git remote -v
+
+17. Add a remote repository:
+git remote add <remote-name > <remote-url>
+
+18. Fetch changes from a remote repository (like refresh form my understanding):
+git fetch <remote-name>
+
+19. Pull changes from a remote repository and merge them in current branch:
+git pull <remote-name> <branch-name>
+
+20. Push Changes to a remote repository:
+git push <remote-name> <branch-name>
+
+INSPECTION AND COMPARISON:
+
+21. View commit history:
+git log
+git log -p : Include changes made on each commit.
+git diff: show changes between commits, branches or working directory.
+git diff <branch1> <branch2>
+
+UNDOING CHANGES
+
+git reset <file>: removes specified file from the staging area, but leaves its changes in the working directory.
+git revert HEAD: undo last commit
+git reset --hard: reset working directory to the last commit.
+
+STASHING CURRENT CHANGES:
+git stash :saves your current changes and reverts your working directory to match the last commit.
+git stash list: List stashed changes.
+git stash apply: Apply stashed changes.
+
+MISCELLANEOUS
+
+git show <commit-hash>
+git push <remote-name> --delete <branch-name>
+git branch -m <new-branch-name>
+
+There are more to learn, but I will stop here for now.
