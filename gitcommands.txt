@@ -31,6 +31,10 @@ git commit -am "Commit message"
 
 BRANCHING AND MERGING
 
+The main branch is like the final code that is realized to the public. When new features are created, they should not be tested on the main branch.
+Instead, a new branch (feature branch) can be created for testing. Commits can be safely made here.
+Additionally, 2 developers working on the same project can each create a branch from a main one. When done with the code, they can merge to the main one.
+
 10: List all branches:
 git branch
 
@@ -39,6 +43,7 @@ git branch <branch-name>
 
 12: Switch to a specified branch:
 git checkout <branch-name>
+git branch -a: The see the different branches and know who is master.
 
 13: Create a new branch and switch to it:
 git checkout -b <branch-name>
@@ -92,3 +97,4 @@ git push <remote-name> --delete <branch-name>
 git branch -m <new-branch-name>
 
 There are more to learn, but I will stop here for now.
+
