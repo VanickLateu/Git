@@ -24,6 +24,7 @@ git add .
 
 8. Commit changes (create new commit from staged changes. A commit is a snapshot of your repository):
 git commit -m "Commit message"
+git push
 
 9. Add and commit in one command:
 git commit -am "Commit message"
@@ -37,6 +38,7 @@ Additionally, 2 developers working on the same project can each create a branch 
 
 10: List all branches:
 git branch
+git branch -a: Will list branches and highlight the branch you are logged on as green
 
 11: Create a new branch:
 git branch <branch-name>
