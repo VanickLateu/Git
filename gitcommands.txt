@@ -56,6 +56,18 @@ git merge <branch-name>
 15. Delete a branch:
 git branch -d <branch-name>
 
+MERGE A BRANCHING
+git status
+git fetch origin: fetch latest changes from remote repo.
+git chechout main/origin: switch to target branch
+git pull origin main/master: to update branch locally.
+git merge feature-branch: merge feature branch into current branch.
+git add .
+git commit
+git push origin main/origin
+git pull 
+
+
 SHARE AND UPDATE PROJECTS
 
 16. Show remote projects
