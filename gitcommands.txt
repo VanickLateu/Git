@@ -66,7 +66,9 @@ git add .
 git commit
 git push origin main/origin
 git pull 
-
+git push origin feature-branch: origin is the main banch and feature-branch is the one we are pushing. 
+git branch --set-upstream-to=origin/testbranch
+git push --set-upstream origin testbranch
 
 SHARE AND UPDATE PROJECTS
 
@@ -109,6 +111,8 @@ MISCELLANEOUS
 git show <commit-hash>
 git push <remote-name> --delete <branch-name>
 git branch -m <new-branch-name>
+
+
 
 There are more to learn, but I will stop here for now.
 
